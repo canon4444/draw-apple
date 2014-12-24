@@ -13,7 +13,7 @@ SDLをこのディレクトリには含みません．
 ==
 設計的な何か
 
-図形(-lSDL_gfx)(#include <SDL/SDL_gfxPrimitives.h>)
+図形(-lSDL_gfx)(#include \<SDL/SDL_gfxPrimitives.h\>)
 + 水平線[hlineColor(SDL_Surface *, x_s, x_g, y, 0xrrggbbff)]
 + 垂直線[vlineColor(SDL_Surface *, x, y_s, y_g, 0xrrggbbff)]
 + 四角形線画[rectangleColor(SDL_Surface *, x_s, y_s, x_g, y_g, 0xrrggbbff)]
