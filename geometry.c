@@ -1,4 +1,4 @@
-/* gcc geometric.c -lSDL -lSDL_gfx -lm */
+/* gcc geometryc.c -lSDL -lSDL_gfx -lm */
 
 #include <stdio.h>
 #include <string.h>
@@ -31,8 +31,36 @@ void Draw_Geometry()
         SDL_UpdateRect(WINDOW, 0, 0, 0, 0);
 
         printf("quit 'q'\n");
-        if( getchar() == 'q' ) flag = 0;
+        char ch = getchar(); scanf("%*c");
+        if( ch == 'q' ) flag = 0;
     }
+}
+
+void Draw_Geometry()
+{
+    int i, j, NUM = rand() % 100, flag = 1;
+    char r[NUM];
+
+    for( i = 0; i < NUM; ++i )
+        r[i] = rand() % 256;
+
+    while( flag ){
+        SDL_FillRect(WINDOW, NULL, 0xffffffff);
+
+        for( i = 0; i < NUM; ++i )
+            for( j = 0; j < CUT; ++j ){
+                circleColor(WINDOW, SIZE/2+cos(j*RAD)*r[i], SIZE/2+sin(j*RAD)*r[i], r[i], COLOR);
+                SDL_UpdateRect(WINDOW, 0, 0, 0, 0);
+                SDL_Delay(1000);
+            }
+
+        printf("quit->'q' restart->'r'\n");
+        char ch = getchar(); scanf("%*c");
+        switch( ch ){
+        case 'q': flag = 0; break;
+        case 'r': SDL_FillRect(WINDOW, 0, 0, 0, 0); break;
+        default : break;
+        }
 }
 
 int main()
@@ -52,7 +80,13 @@ int main()
         exit(-1);
     }
 
-    Draw_Geometry();
+    printf("draw -> 'd'  view -> 'v'\n");
+    char ch = getchar(); scanf("%*c");
+    switch( ch ){
+    case 'd': Draw_Geometry(); break;
+    case 'v': View_Geometry(); break;
+    default : break;
+    }
 
     //メモリ解放
     SDL_FreeSurface(WINDOW);
