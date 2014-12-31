@@ -5,6 +5,9 @@ draw-apple
 SDLをこのディレクトリには含みません．  
 各自でお願いします．
 
+draw-apple.c -> 林檎の絵を描きます．(本筋)
+random_geometry.c -> ランダムに以下に記述している図形の内，線画のものを描画します．
+
 [@hat_404][1]
 
 [1]: https://twitter.com/hat_404 "@hat_404"
@@ -33,6 +36,6 @@ SDLをこのディレクトリには含みません．
 x, y, theta -> Sint16
 + xxxx xxxx xxxx xxxx, yyyy yyyy yyyy yyyy, tttt tttt tttt tttt
 
-[kkkk(図形指定)] [Sint16 * 3 (hlineColor)] [Sint16 * 3 (vlineColor)] [Sint16 * 4 (rectangleColor)] [Sint16 * 4 (boxColor)] [Sint16 * 4 (lineColor)] [Sint16 * 3 (circleColor)] [Sint16 * 3 (filledCircleColor)] [Sint16 * 5 (pieColor)] [Sint16 * 5 (filledPieColor)] [Sint16 * 6 (trigonColor)] [Sint16 * 6 (filledTrigonColor)] [Color]
-合計764bit=95.5byte(α値含まず)
-合計768bit=96byte(α値含む)
+[kkkk(図形指定)] [Sint16 * 3 (hlineColor)] [Sint16 * 3 (vlineColor)] [Sint16 * 4 (rectangleColor)] [Sint16 * 4 (boxColor)] [Sint16 * 4 (lineColor)] [Sint16 * 3 (circleColor)] [Sint16 * 3 (filledCircleColor)] [Sint16 * 5 (pieColor)] [Sint16 * 5 (filledPieColor)] [Sint16 * 6 (trigonColor)] [Sint16 * 6 (filledTrigonColor)] [Color]  
+合計764bit=95.5byte(α値含まず)  
+合計768bit=96byte(α値含む)  
