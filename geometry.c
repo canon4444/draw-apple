@@ -18,7 +18,7 @@ SDL_Surface *WINDOW;
 
 void Draw_Geometry()
 {
-    char r[] = { 1, 4, 10, 44, 100, 1, 9, 9, 4, 7, 24, 6 }; //ここを変えると楽しい！
+    char r[] = { 1, 4, 10, 44, 100 }; //ここを変えると楽しい！
     int i, j, NUM = strlen(r), flag = 1;
 
     while( flag ){
