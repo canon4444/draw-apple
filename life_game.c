@@ -1,4 +1,4 @@
-/* gcc lige_game.c -lSDL -lSDL_gfx */
+/* gcc life_game.c -lSDL -lSDL_gfx */
 
 #include <stdio.h>
 #include <stdlib.h>
