@@ -36,7 +36,7 @@ void Draw_Geometry()
     }
 }
 
-void Draw_Geometry()
+void View_Geometry()
 {
     int i, j, NUM = rand() % 100, flag = 1;
     char r[NUM];
@@ -58,9 +58,10 @@ void Draw_Geometry()
         char ch = getchar(); scanf("%*c");
         switch( ch ){
         case 'q': flag = 0; break;
-        case 'r': SDL_FillRect(WINDOW, 0, 0, 0, 0); break;
+        case 'r': SDL_FillRect(WINDOW, NULL, 0xffffff); break;
         default : break;
         }
+    }
 }
 
 int main()
