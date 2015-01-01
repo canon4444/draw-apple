@@ -1,11 +1,12 @@
-draw-apple
+enjoy-SDL
 ==========
-[SDL(Simple DirectMedia Layer)][2]を利用して，林檎の絵（という名の赤玉）を描きます．
+[SDL(Simple DirectMedia Layer)][2]を利用して，いろいろします．  
+一番したいことは，林檎の絵（という名の赤玉）をGAで描くことです．  
 
 SDLをこのディレクトリには含みません．  
 各自でお願いします．
 
-draw-apple.c -> 林檎の絵を描きます．(本筋)  
+draw-apple.c -> 林檎の絵を描きます．(本筋)(未完成)  
 random_geometry.c -> ランダムに以下に記述している図形の内，線画のものを描画します．  
 geometry.c -> 任意の幾何学模様またはランダムに幾何学模様を描画します．
 
