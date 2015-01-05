@@ -10,9 +10,9 @@ draw-apple.c -> 林檎の絵を描きます．(本筋)(未完成)
 random_geometry.c -> ランダムに以下に記述している図形の内，線画のものを描画します．  
 geometry.c -> 任意の幾何学模様またはランダムに幾何学模様を描画します．
 
-[@hat_404][1]
+[@HAL2467][1]
 
-[1]: https://twitter.com/hat_404 "@hat_404"
+[1]: https://twitter.com/HAL2467 "@HAL2467"
 [2]: http://www.libsdl.org/ "SDL(Simple DirectMedia Layer)"
 
 ==
